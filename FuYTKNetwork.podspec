@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
   #   'FuYTKNetwork' => ['FuYTKNetwork/Assets/*.png']
   # }
 
-  s.public_header_files = 'FuYTKNetwork/**/*.{h}'
+  #s.public_header_files = 'FuYTKNetwork/**/*.{h}'
   # s.frameworks = 'UIKit', 'MapKit'
   #s.dependency "AFNetworking", "~> 3.2.1" 
   #s.dependency 'YTKNetwork', '~> 2.0.4'
