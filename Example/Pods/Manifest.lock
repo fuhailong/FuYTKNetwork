@@ -1,10 +1,35 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - FuYTKNetwork (0.1.0)
+  - FuYTKNetwork (0.1.0):
+    - AFNetworking (~> 3.2.1)
+    - ReactiveObjC (~> 3.1.1)
+    - YTKNetwork (~> 2.0.4)
+    - YYKit (~> 1.0.9)
+  - ReactiveObjC (3.1.1)
+  - YTKNetwork (2.0.4):
+    - AFNetworking (~> 3.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -12,15 +37,23 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AFNetworking
     - FBSnapshotTestCase
+    - ReactiveObjC
+    - YTKNetwork
+    - YYKit
 
 EXTERNAL SOURCES:
   FuYTKNetwork:
     :path: "../"
 
 SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  FuYTKNetwork: 2e623b1d9012ed6df07892cbed3dcc38135b966c
+  FuYTKNetwork: 2e2c51eaa65a4f784dd458ea00653fb7dabad2e3
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
 PODFILE CHECKSUM: fd684cff138acc6ab04fc10151047f3d8c100e1c
 

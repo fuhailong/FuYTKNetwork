@@ -38,7 +38,8 @@ Pod::Spec.new do |s|
 
   #s.public_header_files = 'FuYTKNetwork/**/*.{h}'
   # s.frameworks = 'UIKit', 'MapKit'
-  #s.dependency "AFNetworking", "~> 3.2.1" 
-  #s.dependency 'YTKNetwork', '~> 2.0.4'
-  #s.dependency 'YYKit', '~> 1.0.9'
+  s.dependency "AFNetworking", "~> 3.2.1" 
+  s.dependency 'YTKNetwork', '~> 2.0.4'
+  s.dependency 'YYKit', '~> 1.0.9'
+  s.dependency 'ReactiveObjC', '~> 3.1.1'
 end

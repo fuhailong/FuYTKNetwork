@@ -62,9 +62,9 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		869B80C70A336E066F70344A /* Pods_FuYTKNetwork_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuYTKNetwork_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8FBC3595AA1DC6FD00161B0D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		92317EF2C0C5544FB2E5A1F7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		AEF45E01F199700839E92629 /* FuYTKNetwork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FuYTKNetwork.podspec; path = ../FuYTKNetwork.podspec; sourceTree = "<group>"; };
+		8FBC3595AA1DC6FD00161B0D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		92317EF2C0C5544FB2E5A1F7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AEF45E01F199700839E92629 /* FuYTKNetwork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FuYTKNetwork.podspec; path = ../FuYTKNetwork.podspec; sourceTree = "<group>"; };
 		AFD6E2AC1226B6650D2AB617 /* Pods-FuYTKNetwork_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuYTKNetwork_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FuYTKNetwork_Tests/Pods-FuYTKNetwork_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D6801FE7EC14047D965BDD6D /* Pods_FuYTKNetwork_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuYTKNetwork_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				AFD6E2AC1226B6650D2AB617 /* Pods-FuYTKNetwork_Tests.debug.xcconfig */,
 				56FE6EF90A40BDD8933AF0D9 /* Pods-FuYTKNetwork_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -249,6 +248,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Fu Hailong";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = X88J8L2VSH;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -259,6 +261,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -349,13 +352,21 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FuYTKNetwork_Example/Pods-FuYTKNetwork_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/FuYTKNetwork/FuYTKNetwork.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/YTKNetwork/YTKNetwork.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FuYTKNetwork.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YTKNetwork.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -521,6 +532,7 @@
 			baseConfigurationReference = 45D9741F6A4D7A8F8E80DD3D /* Pods-FuYTKNetwork_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X88J8L2VSH;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FuYTKNetwork/FuYTKNetwork-Prefix.pch";
 				INFOPLIST_FILE = "FuYTKNetwork/FuYTKNetwork-Info.plist";
@@ -537,6 +549,7 @@
 			baseConfigurationReference = 484ABCEA164A7C5E9B7AB2DD /* Pods-FuYTKNetwork_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X88J8L2VSH;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FuYTKNetwork/FuYTKNetwork-Prefix.pch";
 				INFOPLIST_FILE = "FuYTKNetwork/FuYTKNetwork-Info.plist";
