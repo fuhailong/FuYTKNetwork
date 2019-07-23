@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - FuYTKNetwork (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - FuYTKNetwork (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  FuYTKNetwork:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  FuYTKNetwork: 2e623b1d9012ed6df07892cbed3dcc38135b966c
+
+PODFILE CHECKSUM: fd684cff138acc6ab04fc10151047f3d8c100e1c
+
+COCOAPODS: 1.6.2

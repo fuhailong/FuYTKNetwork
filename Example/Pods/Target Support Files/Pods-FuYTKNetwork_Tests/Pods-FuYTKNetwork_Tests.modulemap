@@ -1,0 +1,6 @@
+framework module Pods_FuYTKNetwork_Tests {
+  umbrella header "Pods-FuYTKNetwork_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module FuYTKNetwork {
+  umbrella header "FuYTKNetwork-umbrella.h"
+
+  export *
+  module * { export * }
+}
